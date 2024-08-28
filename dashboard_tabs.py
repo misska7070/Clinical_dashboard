@@ -8,8 +8,8 @@ import plotly.express as px
 
 
 # Load data
-cleaned_response_times_df = pd.read_excel('./data/cleaned_response_output.xlsx')
-no_responses_df = pd.read_excel('./data/no_response_output.xlsx')
+cleaned_response_times_df = pd.read_excel('cleaned_response_output.xlsx')
+no_responses_df = pd.read_excel('no_response_output.xlsx')
 
 # Load the precomputed Weighted Average Response Time data
 weighted_avg_response_time_df = pd.read_excel('weighted_average_response_time.xlsx')
