@@ -1,0 +1,37 @@
+
+
+/* Custom styles for the DatePickerRange calendar */
+.DateInput_input {
+    border-radius: 0px !important;
+    width: 100% !important;  /* Ensure full width for better alignment */
+}
+
+/* Ensure DatePickerRange is on a new line */
+.DateRangePicker {
+    display: block;
+    margin-top: 5px;  /* Adds a small margin to push it slightly below the label */
+}
+
+/* Styling for selected dates in the DatePickerRange calendar */
+.CalendarDay__selected, .CalendarDay__selected:hover, 
+.CalendarDay__selected_span, .CalendarDay__selected_span:hover {
+    background: #5bcceb  !important;  /* Blue background for selected dates */
+    border: 1px double #e8ecf1 !important;  /* Optional: to match the blue */
+    color: white !important;  /* White text for better contrast */
+}
+
+/* Styling for the selected start and end date underline */
+.DateInput_input__focused {
+    border-bottom: 2px solid #5bcceb !important;  /* Blue underline */
+}
+
+/* Change the color of the question mark button */
+#DateRangePicker__clearDates {
+    color: #5bcceb  !important;  /* Blue color for the clear dates button */
+}
+
+/* Additional styles to ensure proper alignment and spacing */
+.SingleDatePickerInput {
+    display: flex;
+    align-items: center;
+}
