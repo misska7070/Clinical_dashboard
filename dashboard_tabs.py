@@ -37,6 +37,7 @@ organisations = cleaned_response_times_df['organisationId'].unique()
 
 # Initialize the Dash app with Bootstrap theme and custom CSS
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP, '/assets/styling.css'])
+server=app.server
 
 # Add "All" to dropdown options
 organisation_options = [{'label': 'All', 'value': 'All'}] + [{'label': org, 'value': org} for org in organisations]
